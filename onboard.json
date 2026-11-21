@@ -1,0 +1,43 @@
+    {
+      
+        "schemas": [
+          "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
+        ],
+        "Operations": [
+          {
+            "method": "POST",
+            "bulkId": "flow-05-onboard-newhire",
+            "path": "/Users",
+            "data": {
+              "schemas": [
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:custom:2.0:User"
+              ],
+              "externalId": "EMP-2005",
+              "userName": "ethan.brooks@isurutrader.onmicrosoft.com",
+              "active": true,
+              "name": {
+                "givenName": "Ethan",
+                "familyName": "Brooks"
+              },
+              "emails": [
+                {
+                  "value": "ethan.brooks@isurutrader.onmicrosoft.com",
+                  "type": "work",
+                  "primary": true
+                }
+              ],
+              "title": "Financial Analyst",
+              "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
+                "department": "Finance"
+              },
+              "urn:ietf:params:scim:schemas:extension:custom:2.0:User": {
+                "employeeHireDate": "2026-11-21T09:00:00Z",
+                "employeeType": "Employee"
+              }
+            }
+          }
+        ]
+      }
+    }
