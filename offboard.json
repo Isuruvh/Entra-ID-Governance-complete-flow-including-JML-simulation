@@ -1,0 +1,43 @@
+ {
+        "schemas": [
+          "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
+        ],
+        "Operations": [
+          {
+            "method": "POST",
+            "bulkId": "flow-03-offboard-employee",
+            "path": "/Users",
+            "data": {
+              "schemas": [
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:custom:2.0:User"
+              ],
+              "externalId": "EMP-2003",
+              "userName": "noah.williams@isurutrader.onmicrosoft.com",
+              "active": true,
+              "name": {
+                "givenName": "Noah",
+                "familyName": "Williams"
+              },
+              "emails": [
+                {
+                  "value": "noah.williams@isurutrader.onmicrosoft.com",
+                  "type": "work",
+                  "primary": true
+                }
+              ],
+              "title": "Operations Specialist",
+              "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
+                "department": "Operations"
+              },
+              "urn:ietf:params:scim:schemas:extension:custom:2.0:User": {
+                "employeeHireDate": "2025-10-17T09:00:00Z",
+                "employeeLeaveDateTime": "2026-11-21T09:00:00Z",
+                "employeeType": "Employee"
+              }
+            }
+          }
+        ]
+      }
+    }
