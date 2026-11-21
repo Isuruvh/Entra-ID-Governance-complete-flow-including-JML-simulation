@@ -1,8 +1,5 @@
 {
-      "flow_number": 1,
-      "workflow_name": "Employee group membership changes",
-      "trigger_explanation": "Updates department/title attributes that drive dynamic group membership changes (Mover trigger).",
-      "scim_bulk_payload": {
+	"scim_bulk_payload": {
         "schemas": [
           "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
         ],
@@ -43,4 +40,4 @@
           }
         ]
       }
-    }
+}
