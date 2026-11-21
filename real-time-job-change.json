@@ -1,0 +1,42 @@
+
+   {
+        "schemas": [
+          "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
+        ],
+        "Operations": [
+          {
+            "method": "POST",
+            "bulkId": "flow-11-realtime-job-change",
+            "path": "/Users",
+            "data": {
+              "schemas": [
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:custom:2.0:User"
+              ],
+              "externalId": "EMP-2001",
+              "userName": "liam.chen@isurutrader.onmicrosoft.com",
+              "active": true,
+              "name": {
+                "givenName": "Liam",
+                "familyName": "Chen"
+              },
+              "emails": [
+                {
+                  "value": "liam.chen@isurutrader.onmicrosoft.com",
+                  "type": "work",
+                  "primary": true
+                }
+              ],
+              "title": "Principal Security Architect",
+              "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
+                "department": "Enterprise Security"
+              },
+              "urn:ietf:params:scim:schemas:extension:custom:2.0:User": {
+                "employeeHireDate": "2026-05-25T09:00:00Z",
+                "employeeType": "Employee"
+              }
+            }
+          }
+        ]
+      }
