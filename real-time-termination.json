@@ -1,0 +1,45 @@
+{
+        "schemas": [
+          "urn:ietf:params:scim:api:messages:2.0:BulkRequest"
+        ],
+        "Operations": [
+          {
+            "method": "POST",
+            "bulkId": "flow-12-realtime-termination",
+            "path": "/Users",
+            "data": {
+              "schemas": [
+                "urn:ietf:params:scim:schemas:core:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+                "urn:ietf:params:scim:schemas:extension:custom:2.0:User"
+              ],
+              "externalId": "EMP-2009",
+              "userName": "mason.garcia@isurutrader.onmicrosoft.com",
+              "active": false,
+              "name": {
+                "givenName": "Mason",
+                "familyName": "Garcia"
+              },
+              "emails": [
+                {
+                  "value": "mason.garcia@isurutrader.onmicrosoft.com",
+                  "type": "work",
+                  "primary": true
+                }
+              ],
+              "title": "Solutions Architect",
+              "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User": {
+                "department": "Engineering"
+              },
+              "urn:ietf:params:scim:schemas:extension:custom:2.0:User": {
+                "employeeHireDate": "2025-03-31T09:00:00Z",
+                "employeeLeaveDateTime": "2026-11-21T09:00:00Z",
+                "employeeType": "Employee"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
